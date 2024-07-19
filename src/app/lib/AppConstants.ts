@@ -1,14 +1,14 @@
 export const navItems = [
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
-    { name: "Contact", link: "#contact" },
+    {name: "About", link: "#about"},
+    {name: "Projects", link: "#projects"},
+    {name: "Testimonials", link: "#testimonials"},
+    {name: "Contact", link: "#contact"},
 ];
 
 export const gridItems = [
     {
         id: 1,
-        title: "I prioritize client collaboration, fostering open communication ",
+        title: "Focused on Delivering High-Quality Web Solutions",
         description: "",
         className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
         imgClassName: "w-full h-full",
@@ -106,67 +106,42 @@ export const projects = [
 
 export const testimonials = [
     {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
+        quote: "Working with Sai was a fantastic experience. His professionalism, attention to detail, and commitment to excellence were evident throughout our project. Arjun's passion for development truly shines. If you want to enhance your website and boost your brand, Arjun is the perfect choice.",
+        name: "Aarav Patel",
+    }
+
 ];
 
 export const companies = [
     {
         id: 1,
-        name: "cloudinary",
-        img: "/cloud.svg",
-        nameImg: "/cloudName.svg",
+        name: "Javascript",
+        img: "/javascript.svg",
+        nameImg: "Javascript",
     },
     {
         id: 2,
-        name: "appwrite",
-        img: "/app.svg",
-        nameImg: "/appName.svg",
+        name: "Tailwind",
+        img: "/tailwind-css.svg",
+        nameImg: "Tailwind ",
     },
     {
         id: 3,
-        name: "HOSTINGER",
-        img: "/host.svg",
-        nameImg: "/hostName.svg",
+        name: "React Js",
+        img: "/react-2.svg",
+        nameImg: "React Js",
     },
     {
         id: 4,
-        name: "stream",
-        img: "/s.svg",
-        nameImg: "/streamName.svg",
+        name: "Nextjs",
+        img: "/next.svg",
+        nameImg: "Next Js",
     },
     {
         id: 5,
-        name: "docker.",
-        img: "/dock.svg",
-        nameImg: "/dockerName.svg",
+        name: "Vercel",
+        img: "/vercel.svg",
+        nameImg: "Vercel",
     },
 ];
 
@@ -174,31 +149,31 @@ export const workExperience = [
     {
         id: 1,
         title: "Frontend Engineer Intern",
-        desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+        desc: "Developed web applications using React.js, designed responsive UI with Tailwind CSS, and integrated APIs for seamless data flow.",
         className: "md:col-span-2",
         thumbnail: "/exp1.svg",
     },
     {
         id: 2,
-        title: "Mobile App Dev - JSM Tech",
-        desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-        className: "md:col-span-2", // change to md:col-span-2
+        title: "Next.js & TypeScript Developer",
+        desc: "Developed and optimized web applications using Next.js and TypeScript, implementing dynamic routing, server-side rendering, and type safety.",
+        className: "md:col-span-2",
         thumbnail: "/exp2.svg",
     },
     {
         id: 3,
-        title: "Freelance App Dev Project",
-        desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-        className: "md:col-span-2", // change to md:col-span-2
+        title: "React & TypeScript Developer",
+        desc: "Created dynamic web interfaces with React.js and TypeScript, ensuring efficient component architecture and improved user experience across devices.",
+        className: "md:col-span-2",
         thumbnail: "/exp3.svg",
     },
     {
         id: 4,
-        title: "Lead Frontend Developer",
-        desc: "Developed and maintained user-facing features using modern frontend technologies.",
+        title: "Frontend Performance Optimization",
+        desc: "Enhanced application performance by optimizing code and resolving frontend issues, resulting in faster load times and improved user satisfaction.",
         className: "md:col-span-2",
         thumbnail: "/exp4.svg",
-    },
+    }
 ];
 
 export const socialMedia = [
