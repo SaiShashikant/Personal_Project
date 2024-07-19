@@ -108,8 +108,8 @@ export const testimonials = [
     {
         quote: "Working with Sai was a fantastic experience. His professionalism, attention to detail, and commitment to excellence were evident throughout our project. Arjun's passion for development truly shines. If you want to enhance your website and boost your brand, Arjun is the perfect choice.",
         name: "Aarav Patel",
-    }
-
+        title: "",
+    },
 ];
 
 export const companies = [
