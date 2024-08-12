@@ -1,7 +1,6 @@
 import {Hero} from "@/components/Hero";
 import {FloatingNav} from "@/components/ui/FloatingNav";
 import {Grid} from "@/components/Grid";
-import {RecentProjects} from "@/components/RecentProjects";
 import {navItems} from "@/app/lib/AppConstants";
 import {Clients} from "@/components/Clients";
 import {Experience} from "@/components/Experience";
