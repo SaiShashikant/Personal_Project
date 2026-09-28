@@ -1,5 +1,6 @@
 import type {Metadata} from "next";
 import {Inter} from "next/font/google";
+import {Analytics} from "@vercel/analytics/next";
 import "./globals.css";
 import {ThemeProvider} from "@/app/provider";
 import React from "react";
@@ -17,7 +18,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" suppressHydrationWarning>
         <body className={inter.className}><ThemeProvider
             attribute="class"
             defaultTheme="dark"
@@ -25,7 +26,9 @@ export default function RootLayout({
             disableTransitionOnChange
         >
             {children}
-        </ThemeProvider></body>
+        </ThemeProvider>
+        <Analytics/>
+        </body>
         </html>
     );
 }
