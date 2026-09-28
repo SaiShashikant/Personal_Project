@@ -10,10 +10,10 @@ export const gridItems = [
         id: 1,
         title: "Focused on Delivering High-Quality Web Solutions",
         description: "",
-        className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+        className: "lg:col-span-3 md:col-span-6 md:row-span-4 min-h-[24rem] sm:min-h-[28rem] lg:min-h-[60vh]",
         imgClassName: "w-full h-full",
         titleClassName: "justify-end",
-        img: "/b1.svg",
+        img: "",
         spareImg: "",
     },
     {
@@ -49,7 +49,7 @@ export const gridItems = [
 
     {
         id: 5,
-        title: "Currently building a JS Animation library",
+        title: "Currently shipping Kovaad features",
         description: "The Inside Scoop",
         className: "md:col-span-3 md:row-span-2",
         imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,108 +72,62 @@ export const gridItems = [
 export const projects = [
     {
         id: 1,
-        title: "3D Solar System Planets to Explore",
-        des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-        img: "/p1.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-        link: "https://github.com/adrianhajdin?tab=repositories",
+        title: "Kovaad",
+        des: "AI training platform for specially abled children — therapists and guardians use LLM-powered sessions to build social awareness and emotion understanding. Built the Next.js app (app.kovaad.ai) and NestJS backends (auth, chats, users, payments, profile).",
+        img: "/kovaad-logo.png",
+        fit: "contain",
+        iconLists: ["/next.svg", "/ts.svg", "/re.svg", "/tail.svg", "/dock.svg"],
+        link: "https://kovaad.ai",
+        cta: "Check Live Site",
     },
     {
         id: 2,
-        title: "Yoom - Video Conferencing App",
-        des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-        img: "/p2.svg",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-        link: "https://github.com/adrianhajdin/zoom-clone",
-    },
-    {
-        id: 3,
-        title: "AI Image SaaS - Canva Application",
-        des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-        img: "/p3.svg",
-        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-        link: "https://github.com/adrianhajdin/ai_saas_app",
-    },
-    {
-        id: 4,
-        title: "Animated Apple Iphone 3D Website",
-        des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-        img: "/p4.svg",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-        link: "https://github.com/adrianhajdin/iphone",
+        title: "SEG-PACE",
+        des: "Price & Cost Evaluation platform — React/Vite frontend and FastAPI/PostgreSQL backend with Azure SSO for enterprise procurement analytics.",
+        img: "/seg-pace.svg",
+        fit: "contain",
+        iconLists: ["/re.svg", "/ts.svg", "/tail.svg", "/dock.svg", "/cloud.svg"],
     },
 ];
 
 export const testimonials = [
     {
-        quote: "Working with Sai was a fantastic experience. His professionalism, attention to detail, and commitment to excellence were evident throughout our project. Sai's passion for development truly shines. If you want to enhance your website and boost your brand, Arjun is the perfect choice.",
-        name: "Aarav Patel",
-        title: "",
-    },
-];
-
-export const companies = [
-    {
-        id: 1,
-        name: "Javascript",
-        img: "/javascript.svg",
-        nameImg: "Javascript",
-    },
-    {
-        id: 2,
-        name: "Tailwind",
-        img: "/tailwind-css.svg",
-        nameImg: "Tailwind ",
-    },
-    {
-        id: 3,
-        name: "React Js",
-        img: "/react-2.svg",
-        nameImg: "React Js",
-    },
-    {
-        id: 4,
-        name: "Nextjs",
-        img: "/next.svg",
-        nameImg: "Next Js",
-    },
-    {
-        id: 5,
-        name: "Vercel",
-        img: "/vercel.svg",
-        nameImg: "Vercel",
+        quote: "I have had the pleasure of working with Sai Shashikant at Kovaad for the past year, where he joined our team as a fresher and has since made remarkable progress as a Full-Stack Developer. Sai has consistently demonstrated intelligence, dedication, and a strong work ethic throughout his tenure.\n\nSai is proficient in a range of modern technologies, including React, Next.js, and NestJS, and has hands-on experience with Docker, Google Cloud Run, and Github Actions. Over the past year, he has become highly dependable in handling frontend requirements independently and delivers quality solutions with minimal supervision. While he occasionally seeks guidance for complex backend logic, once the requirements are explained, he is able to implement robust and effective solutions.\n\nSai’s positive attitude and professionalism make him a joy to work with. He is always eager to learn and takes feedback constructively, which has contributed significantly to his rapid growth. His reliability and cheerful demeanor have made him a valued member of our team.",
+        name: "Pradeep Gudipati",
+        title: "Kovaad Technologies",
+        link: "https://www.linkedin.com/in/pradeepgudipati",
     },
 ];
 
 export const workExperience = [
     {
         id: 1,
-        title: "Frontend Engineer Intern",
-        desc: "Developed web applications using React.js, designed responsive UI with Tailwind CSS, and integrated APIs for seamless data flow.",
+        title: "Next.js & TypeScript apps",
+        desc: "Built and shipped app-router products with typed components, SSR/CSR where needed, and solid DX.",
         className: "md:col-span-2",
         thumbnail: "/exp1.svg",
     },
     {
         id: 2,
-        title: "Next.js & TypeScript Developer",
-        desc: "Developed and optimized web applications using Next.js and TypeScript, implementing dynamic routing, server-side rendering, and type safety.",
+        title: "NestJS / API backends",
+        desc: "Auth, chats, users, payments, and profile services with clear module boundaries.",
         className: "md:col-span-2",
         thumbnail: "/exp2.svg",
     },
     {
         id: 3,
-        title: "React & TypeScript Developer",
-        desc: "Created dynamic web interfaces with React.js and TypeScript, ensuring efficient component architecture and improved user experience across devices.",
+        title: "React + Vite product UIs",
+        desc: "Enterprise dashboards with Microsoft SSO patterns and responsive, accessible UI.",
         className: "md:col-span-2",
         thumbnail: "/exp3.svg",
     },
     {
         id: 4,
-        title: "Frontend Performance Optimization",
-        desc: "Enhanced application performance by optimizing code and resolving frontend issues, resulting in faster load times and improved user satisfaction.",
+        title: "Performance & reliability",
+        desc: "Faster loads, cleaner frontend issues, and shipping quality users notice.",
         className: "md:col-span-2",
         thumbnail: "/exp4.svg",
-    }
+    },
 ];
 
 export const socialMedia = [
