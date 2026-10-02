@@ -1,8 +1,14 @@
+export const resumeFile = {
+    path: "/Sai-Shashikant-Resume.pdf",
+    downloadName: "Sai-Shashikant-Resume.pdf",
+};
+
 export const navItems = [
-    {name: "About", link: "#about"},
-    {name: "Projects", link: "#projects"},
-    {name: "Testimonials", link: "#testimonials"},
-    {name: "Contact", link: "#contact"},
+    {name: "About", link: "/#about"},
+    {name: "Projects", link: "/#projects"},
+    {name: "Testimonials", link: "/#testimonials"},
+    {name: "Contact", link: "/#contact"},
+    {name: "Resume", link: "/resume"},
 ];
 
 export const gridItems = [
