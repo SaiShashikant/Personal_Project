@@ -69,6 +69,54 @@
 
     .contact a:hover { text-decoration: underline; }
 
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.3in;
+    }
+
+    .photo {
+      flex-shrink: 0;
+      width: 1in;
+      height: 1in;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--accent);
+    }
+
+    body.no-photo .photo { display: none; }
+
+    .achievements li { margin-bottom: 0.03in; }
+
+    .project-entry + .project-entry {
+      margin-top: 0.08in;
+    }
+
+    .project-entry h3 {
+      margin: 0;
+      font-size: 10pt;
+      font-weight: 700;
+    }
+
+    .tech {
+      margin: 0 0 0.02in;
+      font-size: 9pt;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .project-entry,
+    li {
+      break-inside: avoid;
+    }
+
+    h2,
+    .job-header,
+    .company {
+      break-after: avoid;
+    }
+
     h2 {
       margin: 0.11in 0 0.04in;
       padding-bottom: 0.02in;
@@ -168,6 +216,11 @@
         padding: 0.5rem 0.9rem;
       }
 
+      .header {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+
       .edu-row,
       .job-header {
         flex-direction: column;
@@ -210,23 +263,37 @@
     Print tip: Save as PDF → Margins “None” or “Minimum” → uncheck “Headers and footers”.
   </p>
   <main class="page">
-    <header>
-      <h1>D S N Shashikant</h1>
-      <p class="title">Full Stack + AI Engineer</p>
-      <p class="contact">
-        Email: <a href="mailto:saishashikant4@gmail.com">saishashikant4@gmail.com</a>
-        &nbsp;•&nbsp; Phone: <a href="tel:+918109710677">+91 81097 10677</a>
-        &nbsp;•&nbsp; <a href="https://portfolio-saishashikants-projects.vercel.app/" target="_blank" rel="noreferrer">Portfolio</a>
-        &nbsp;•&nbsp; <a href="https://www.linkedin.com/in/shashikant987" target="_blank" rel="noreferrer">linkedin.com/in/shashikant987</a>
-        &nbsp;•&nbsp; <a href="https://github.com/SaiShashikant" target="_blank" rel="noreferrer">github.com/SaiShashikant</a>
-      </p>
+    <header class="header">
+      <div>
+        <h1>D S N Shashikant</h1>
+        <p class="title">Full Stack + AI Engineer</p>
+        <p class="contact">
+          Email: <a href="mailto:saishashikant4@gmail.com">saishashikant4@gmail.com</a>
+          &nbsp;•&nbsp; Phone: <a href="tel:+918109710677">+91 81097 10677</a>
+          &nbsp;•&nbsp; <a href="https://saishashikant-2101e.web.app" target="_blank" rel="noreferrer">Portfolio</a>
+          &nbsp;•&nbsp; <a href="https://www.linkedin.com/in/shashikant987" target="_blank" rel="noreferrer">linkedin.com/in/shashikant987</a>
+          &nbsp;•&nbsp; <a href="https://github.com/SaiShashikant" target="_blank" rel="noreferrer">github.com/SaiShashikant</a>
+        </p>
+      </div>
+      <img class="photo" src="photo.jpg" alt="D S N Shashikant" />
     </header>
 
     <section>
       <h2>Summary</h2>
       <p class="summary">
-        Full Stack + AI Engineer with strong production experience building scalable AI product platforms and high-density enterprise web applications. Proven track record architecting multi-model LLM agents, real-time WebSocket communication pipelines (NestJS, Redis), and enterprise frontend systems for manufacturing procurement and finance workflows.
+        Full Stack + AI Engineer with six years at Kovaad Technologies, taking an AI communication platform for neurodiverse children from early MVP to a production system used daily by trainees, guardians, therapy centers, and admins. Designs and ships features end to end: Next.js role-based dashboards, NestJS microservices on GCP Cloud Run behind Kong, real-time Socket.IO chat and voice, and multi-model LLM orchestration with LangChain and RAG. Also delivered the frontend for SEG-PACE, an enterprise procurement, pricing, and finance platform for manufacturing. Comfortable owning work from design document to deployment, with a strong focus on reliability, child safety, and well-tested code.
       </p>
+    </section>
+
+    <section>
+      <h2>Key Achievements</h2>
+      <ul class="achievements">
+        <li>Primary author of 4 of Kovaad&rsquo;s 6 NestJS microservices (chats, users, members, payments), writing 68&ndash;89% of the commits in each, plus 1,000+ commits to the main Next.js application.</li>
+        <li>Unified 4 LLM providers (Gemini, OpenAI, Anthropic, Llama) behind a single LangChain model layer, keeping conversation features provider-agnostic.</li>
+        <li>Shipped child-safety controls end to end: red-flag alerts from live chats, instant trainee suspension with forced logout and token revocation, and an append-only audit trail.</li>
+        <li>Built real-time notifications for all 4 user roles, with Firestore persistence and WebSocket delivery across 20+ event types.</li>
+        <li>Contributed to a 670+ case automated test suite spanning the web app and backend services.</li>
+      </ul>
     </section>
 
     <section>
@@ -266,6 +333,55 @@
     </section>
 
     <section>
+      <h2>Selected Projects</h2>
+
+      <div class="project-entry">
+        <h3>Conversation Orchestration Engine &mdash; Kovaad</h3>
+        <p class="tech">NestJS, LangChain, Redis, Firestore</p>
+        <ul>
+          <li>Built the topic-of-conversation engine that steers LLM sessions toward structured social-skill practice, picking topics from upcoming events, profile hobbies, and past high-engagement conversations when a child goes quiet.</li>
+          <li>Designed gap-aware session resume: silent continue under 15 minutes, a one-line recap and prompt at 15&ndash;30 minutes, and a fresh greeting after 30, plus &ldquo;be right back&rdquo; pauses and an in-chat End Session flow with topic selection.</li>
+        </ul>
+      </div>
+
+      <div class="project-entry">
+        <h3>AI Progress Reports &mdash; Kovaad</h3>
+        <p class="tech">LangChain, pdfkit, NestJS Schedule, Redis</p>
+        <ul>
+          <li>Automated LLM analysis of chat transcripts into PDF progress reports for guardians, triggered after a trial session, on a recurring schedule (daily cron once 15+ days and 12+ hours of chat accrue), or on demand.</li>
+          <li>Cached analyses in Redis for 7 days and notified guardians in real time when a new report is ready.</li>
+        </ul>
+      </div>
+
+      <div class="project-entry">
+        <h3>Payments &amp; Subscriptions Microservice &mdash; Kovaad</h3>
+        <p class="tech">NestJS, Razorpay, GCP Pub/Sub, React-PDF</p>
+        <ul>
+          <li>Built the payments service from its first commit: retail subscriptions for guardians and B2B bulk seat purchases for therapy centers, billed in INR and USD, with purchasable add-on packs.</li>
+          <li>Implemented the in-app paywall, invoice generation, and B2B guardian onboarding emails, with Pub/Sub messaging between services.</li>
+        </ul>
+      </div>
+
+      <div class="project-entry">
+        <h3>Trainee Safety &amp; Access Control &mdash; Kovaad</h3>
+        <p class="tech">NestJS, Socket.IO, Firebase Auth</p>
+        <ul>
+          <li>Red flags raised in live chats trigger caregiver email alerts; caregivers can suspend a trainee instantly, forcing logout over WebSocket and revoking Firebase tokens.</li>
+          <li>Recorded every suspension and restore in an append-only audit log, and locked shared access links to their intended recipient.</li>
+        </ul>
+      </div>
+
+      <div class="project-entry">
+        <h3>Real-time Voice Chat &mdash; Kovaad</h3>
+        <p class="tech">Next.js, Socket.IO, Google Cloud Speech-to-Text / Text-to-Speech, Whisper</p>
+        <ul>
+          <li>Built the WebSocket voice loop between the web app and chat backend: streaming speech-to-text, including mixed-language speech, and gender-matched text-to-speech voices.</li>
+          <li>Added idle-timeout handling and session recovery so live sessions survive brief disconnects.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
       <h2>Technical Skills</h2>
       <table class="skills">
         <tr>
@@ -295,5 +411,8 @@
       </div>
     </section>
   </main>
+  <script>
+    if (new URLSearchParams(location.search).has("nophoto")) document.body.classList.add("no-photo");
+  </script>
 </body>
 </html>
