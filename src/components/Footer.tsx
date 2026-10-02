@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {MagicButton} from "@/components/ui/MagicButton";
 import {FaLocationArrow} from "react-icons/fa";
 import {HiOutlineDocumentText} from "react-icons/hi";
@@ -21,14 +22,14 @@ export const Footer = () => {
             </div>
             <div className="flex mt-16 md:flex-row flex-col justify-between items-center gap-5">
                 <p className="md:text-base text-sm md:font-normal font-light"> Copyright © 2026</p>
-                <a href="/Sai-Shashikant-Resume.pdf" download="Sai-Shashikant-Resume.pdf">
+                <Link href="/resume">
                     <MagicButton
                         title="Resume"
                         icon={<HiOutlineDocumentText/>}
                         position="left"
                         className="!mt-0 !h-10 !w-auto"
                     />
-                </a>
+                </Link>
                 <div className="flex items-center md:gap-3 md:mt-0 mt-5 gap-6">
                     {socialMedia.map((profile) => (
                         <a target="_blank" href={profile.link} rel="noopener noreferrer" key={profile.id}>
