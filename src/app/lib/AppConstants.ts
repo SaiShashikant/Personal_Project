@@ -1,5 +1,5 @@
 export const resumeFile = {
-    path: "/Sai-Shashikant-Resume.pdf",
+    path: `/Sai-Shashikant-Resume.pdf?v=${process.env.NEXT_PUBLIC_RESUME_VERSION}`,
     downloadName: "Sai-Shashikant-Resume.pdf",
 };
 
